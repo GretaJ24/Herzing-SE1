@@ -48,8 +48,8 @@ public class Unit1 {
             }
 
         }
-        //tally
-        System.out.println("/nGameOver!");
+        //tallys
+        System.out.println("Game Over!");
         System.out.println("Player 1 wins: " + p1Win);
         System.out.println("Player 2 wins: " + p2Win);
         scanner.close();

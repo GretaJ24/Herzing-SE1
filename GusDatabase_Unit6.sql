@@ -1,0 +1,16 @@
+SHOW DATABASES;
+CREATE DATABASE gus_database;
+SHOW CREATE DATABASE gus_database;
+USE gus_database;
+CREATE TABLE orders (orderID int, tableID int, orderStatus varchar(255), totalPrice int);
+SELECT * FROM orders;
+CREATE TABLE menu(menuItemID int, itemName varchar(255), itemPrice int, category varchar(255), itemDescription varchar(400));
+SELECT * FROM menu;
+CREATE TABLE orderDetails (detailID int, orderID int, menuItemID int, quantity int);
+SELECT * FROM orderDetails;
+CREATE TABLE reservations(reservationID int, name varchar(255), tableID int, time DATETIME, partySize int, notes varchar(400));
+SELECT * FROM reservations;
+CREATE TABLE tables(tableID int, partySize int, cleanStatus varchar(255), useStatus varchar(255));
+SELECT * FROM tables;
+CREATE TABLE inventory(ingredientID int, ingredientName varchar(255), requiredStock int, currentStock int, restockStatus varchar(255));
+SELECT * FROM inventory;

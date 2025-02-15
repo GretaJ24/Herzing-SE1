@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit Reservations</title>
+</head>
+<body>
+    <h2>Edit Reservations</h2>
+    <form th:actions="@{/reservations/{reservationID}(reservationID=${reservations.reservationID})}" th:object="${reservations}" method="post">
+        <input type="hidden" th:field="*{reservationID}" />
+        <p>Reservation Time: <input type="text" th:field="*{time}" /></p>
+        <p>Party Size: <input type="text" th:field="*{partySize}" /></p>
+        <p>Table Number: <input type="text" th:field="*{tableID}" /></p>
+        <p>Customer Name: <input type="text" th:field="*{name}" /></p>
+        <p>Notes: <input type="text" th:field="*{notes}" /></p>
+        <p><button type="submit">Save</button></p>
+    </form>
+</body>
+</html>

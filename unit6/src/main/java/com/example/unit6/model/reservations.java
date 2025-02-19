@@ -1,7 +1,7 @@
 package com.example.unit6.model;
 
 import jakarta.persistence.*;
-
+//Front Service
 @Entity
 @Table(name = "reservations")
 public class reservations {

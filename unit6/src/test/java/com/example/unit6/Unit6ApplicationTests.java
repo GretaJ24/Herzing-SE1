@@ -7,7 +7,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 class Unit6ApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void contextLoads() {   
+		assert true;
+		// This test is intentionally left blank to check if the application context loads successfully.
 	}
-
 }
